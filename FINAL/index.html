@@ -15,12 +15,13 @@
                 <li><a href="#work">Work</a></li>
                 
                 <li><a href="#contact">Contact</a></li>
-                <p >
-                    <a href="#portfolio">Sign In</a>
+                <p>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
                 </p>
             </ul>
 
         </nav>
+
 
 
         <article id="contact" class="wrapper style4">
@@ -65,17 +66,7 @@
                             <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
                             <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
                             <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                            <!--
-                            <li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-                            <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-                            <li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-                            <li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-                            <li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-                            <li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-                            <li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-                            <li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-                            <li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-                            -->
+                            
                         </ul>
                         <hr />
                     </div>
@@ -86,6 +77,50 @@
                     </ul>
                 </footer>
             </div>
+        </article>
+
+
+        <article id="login">
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="index.html" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            
         </article>
     </body>
 
