@@ -402,12 +402,29 @@ background-color: #f44336;
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
+
+    .wrapper.style1 label
+    {
+        font-size:x-large;
+    }
+    .wrapper.style1 {
+        background-color: #303030;
+        color: rgb(230, 223, 223);
+        text-shadow: -1px -1px 0px #181818;
+    }
+    .wrapper.style1 form input[type=text]{
+        border-radius:rgb(238, 234, 234);
+        width: 150px;
+        background: #282828;
+        color: rgb(245, 239, 239);
+    }
+
     .wrapper.style4 {
         background-color: #303030;
         color: #999;
         text-shadow: -1px -1px 0px #181818;
     }
-
+    
         .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
             color: #fff;
         }
@@ -420,12 +437,7 @@ background-color: #f44336;
             background: #282828;
         }
 
-            .wrapper.style4 form input[type=text]:focus,
-            .wrapper.style4 form input[type=password]:focus,
-            .wrapper.style4 form select:focus,
-            .wrapper.style4 form textarea:focus {
-                background: #252525;
-            }
+
 /* Copyright */
 
 #copyright {

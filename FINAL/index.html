@@ -23,14 +23,21 @@
 
         </nav>
 
-        <article id="home" class = "wrapper style4"> 
+        <article id="home" class = "wrapper style1"> 
             <header>
                 <h1> The next big thing in online car buying and selling! </h1>
-                <label for="search" font-size="large"><b>Search</b></label>
-                <br>  
-                <input type="text" placeholder="Find your next car here..." name="search" required>
+                
             </header>
-
+            <div>
+                <form id="carsearch" onsubmit= "searchCars()">
+                    <label for="search"><b>Search</b></label>
+                    <br>  
+                    <input type="text" placeholder="Find your next car here..." name="search" required>
+                    <input type="submit" value="GO" />
+                </form>
+            </div>
+                
+            <script src="searchCars.js">        </script>
         </article>
 
 
