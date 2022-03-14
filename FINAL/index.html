@@ -25,17 +25,11 @@
     </nav>
 
     <article id="home" class="wrapper style1">
-        <header>
+        <header><br>
             <h1> The next big thing in online car buying and selling! </h1>
 
         </header>
         <div>
-            <form id="carsearch" onsubmit="searchCars()">
-                <label for="search"><b>Search</b></label>
-                <br>
-                <input type="text" placeholder="Find your next car here..." name="search" required>
-                <input type="submit" value="GO" />
-            </form>
 
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Quick Search..">
             <script>
@@ -66,7 +60,6 @@
             </script>
         </div>
 
-        <script src="searchCars.js">        </script>
     </article>
 
 
@@ -147,19 +140,19 @@
 
     </article>
 
-    <article id="contact" class="wrapper style4">
+    <article id="feedback" class="wrapper style4">
         <div class="container medium">
             <header>
                 <h2>Give us your feedback below!</h2>
-                <p>And sign up for our mailing list.</p>
+                
             </header>
             <div class="row">
                 <form method="post" action="#">
                     <div class="row">
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <input type="text" name="name" id="name" placeholder="Name" />
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <input type="text" name="email" id="email" placeholder="Email" />
                         </div>
                         <div class="col-12">
@@ -169,10 +162,14 @@
                             <textarea name="message" id="message" placeholder="Message"></textarea>
                         </div>
                         <div class="col-12">
+                            <input type="checkbox" id="mailing">   Click here to sign up for our mailing list and stay up to date with our latest car deals.</input>
+                        </div>
+                        <div class="col-12">
                             <ul class="actions">
-                                <li><input type="submit" value="Send Message" /></li>
+                                <li><input type="reset" onclick="myFeedback()" value="Send Message" /></li>
                                 <li><input type="reset" value="Clear Form" class="alt" /></li>
                             </ul>
+                            <!-- <script> function myFeedback(){ alert("Feeback submitted, Thank you!");}</script> -->
                         </div>
                     </div>
                 </form>
