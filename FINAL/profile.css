@@ -1,0 +1,216 @@
+body{
+  margin:0;
+}
+
+#nav {
+  background-color: #282828;
+  text-align: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  cursor: default;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+
+#nav ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+#nav li {
+  display: inline-block;
+  padding-right: 10px
+}
+
+
+#nav a {
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  -ms-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  position: relative;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #fff;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 1.25em;
+  float: left;
+}
+
+#nav a:hover {
+  color: #fff !important;
+  background: #383838;
+}
+
+#nav a.active {
+  background: #484848;
+}
+
+#nav a.active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.6em;
+  left: 50%;
+  margin-left: -0.75em;
+  border-left: solid 0.75em transparent;
+  border-right: solid 0.75em transparent;
+  border-top: solid 0.6em #282828;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(100% - 50px);
+  width: 1200px;
+}
+
+.container.medium {
+    width: 900px;
+}
+
+body {
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+    .student-profile .card {
+      border-radius: 10px;
+  }
+
+  .student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #be1600;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #be1600;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}
