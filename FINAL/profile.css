@@ -1,11 +1,12 @@
-body{
-  margin:0;
+* {
+  box-sizing: border-box;
 }
 
 #nav {
   background-color: #282828;
   text-align: left;
-  position: fixed;
+  padding-top: 8px;
+  padding-left: 300px;
   left: 0;
   top: 0;
   width: 100%;
@@ -15,16 +16,10 @@ body{
   line-height: 3.5em;
 }
 
-#nav ul {
-  margin-bottom: 0;
-  list-style: none;
-}
-
 #nav li {
   display: inline-block;
-  padding-right: 10px
+  padding: 0px 5px;
 }
-
 
 #nav a {
   -moz-transition: background-color .2s ease-in-out;
@@ -45,6 +40,7 @@ body{
   float: left;
 }
 
+
 #nav a:hover {
   color: #fff !important;
   background: #383838;
@@ -54,26 +50,20 @@ body{
   background: #484848;
 }
 
-#nav a.active:before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -0.6em;
-  left: 50%;
-  margin-left: -0.75em;
-  border-left: solid 0.75em transparent;
-  border-right: solid 0.75em transparent;
-  border-top: solid 0.6em #282828;
-}
 
+/* item containers */
 .container {
-  margin: 0 auto;
+  margin: 25px;
   max-width: calc(100% - 50px);
   width: 1200px;
 }
 
 .container.medium {
-    width: 900px;
+  width: 900px;
+}
+
+.container.row {
+  position: relative;
 }
 
 body {
@@ -86,17 +76,17 @@ body {
   color: #000;
 }
 
-    .student-profile .card {
-      border-radius: 10px;
-  }
+.student-profile .card {
+  border-radius: 10px;
+}
 
-  .student-profile .card .card-header .profile_img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 10px solid #ccc;
-    border-radius: 50%;
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
 }
 
 .student-profile .card h3 {
@@ -109,14 +99,12 @@ body {
   color: #000;
 }
 
-.student-profile .table th,
-.student-profile .table td {
-    font-size: 14px;
-    padding: 5px 10px;
-    color: #000;
+.student-profile .table th, .student-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
 }
 
-* {box-sizing: border-box}
 
 /* Set a style for all buttons */
 button {
