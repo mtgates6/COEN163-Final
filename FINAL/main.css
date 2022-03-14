@@ -289,8 +289,8 @@ ul.actions {
         font-family: Arial, Helvetica, sans-serif;
 	}
     .wrapper.style4 form input[type=checkbox]{
-        display: inline-block;
         float: left;
+        text-align: left;
     }
 
         .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
