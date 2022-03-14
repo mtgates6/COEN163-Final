@@ -1,3 +1,7 @@
+body{
+    margin:0;
+}
+
 #nav {
     background-color: #282828;
     text-align: left;
@@ -20,11 +24,14 @@
     #nav li {
         display: inline-block;
         padding-left: 0;
+        padding-top:5px;
     }
 
     #nav p {
         display: inline-block;
         padding-left: 600;
+        float:right;
+        margin:0;
     }
 
     #nav a {
@@ -43,6 +50,7 @@
         height: 2.5em;
         line-height: 2.5em;
         padding: 0 1.25em;
+        float: left;
     }
 
         #nav a:hover {
