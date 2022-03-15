@@ -174,7 +174,7 @@
                                 <li><input type="reset" onclick="myFeedback()" value="Send Message" /></li>
                                 <li><input type="reset" value="Clear Form" class="alt" /></li>
                             </ul>
-                            <!-- <script> function myFeedback(){ alert("Feeback submitted, Thank you!");}</script> -->
+                            <script> function myFeedback(){ alert("Feeback submitted, Thank you!");}</script>
                         </div>
                     </div>
                 </form>
@@ -215,7 +215,8 @@
                 <div class="container" style="background-color:#f1f1f1">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'"
                         class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#fgtpass">password?</a></span>
+                    <button type="button" onclick="forgotPassword()"
+                        class="fgtpass">Forgot Password?</button>
                 </div>
             </form>
         </div>
@@ -230,12 +231,17 @@
                     modal.style.display = "none";
                 }
             }
-
-
             function exitToHome(){
-                modal.style.display = "none";
+                document.getElementById('id01').style.display = "none";
 
             }
+            function forgotPassword(){
+                document.getElementById('id01').style.display = "none";
+                modal = document.getElementById('id02');
+                modal.style.display = "block";
+            }
+
+
         </script>
 
     </article>
@@ -245,7 +251,7 @@
 
             <form class="modal-content animate" action="index.html" method="post">
                 <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
                     <img src="avatar.jpeg" alt="Avatar" class="avatar">
                 </div>
@@ -257,14 +263,17 @@
                     <label for="email"><b>Email</b></label>
                     <input type="email" placeholder="Enter Email" name="email" >
 
-                    <button type="button" onclick="exitToHome()">Submit</button>
+                    <button type="button" onclick="fgtpassSubmit()">Submit</button>
                     
                 </div>
-
+                <script> function fgtpassSubmit(){
+                    window.alert("Request submitted successfully. Check your email for next steps.");
+                    document.getElementById('id02').style.display = "none";   
+                }
+                    </script>
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
                         class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
         </div>
