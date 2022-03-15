@@ -277,6 +277,13 @@ ul.actions {
     {
         font-size:x-large;
     }
+    .wrapper.style1 h1{
+        font-size:xx-large;
+        padding: 0;
+    }
+    .wrapper.style1 h2{
+        font-size:x-large;
+    }
     .wrapper.style1 {
         background-color: #303030;
         color: #43B3E0;
